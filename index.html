@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="site">
+
+        <header>
+            <div class="brand">
+                <div class=>👟</div>
+                <div>
+                    <h1>Sneaker <span>Manager</span></h1>
+                </div>
+            </div>
+
+            <p>A nova forma do estilo organizado.</p>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-text">
+                    <small>GERENCIE SUA COLEÇÃO</small>
+                    <h2>Cadastre, consulte<br>e organize <span>seus tênis</span></h2>
+                    <p>Deixe sua coleção sempre em dia. Adicione novos pares,<br>
+                    encontre o que precisa e mantenha tudo organizado.</p>
+                </div>
+
+                <div class="hero-image">
+                    <strong>SNEAKERS</strong>
+                    <img src="nike-dunk.png" alt="Tênis">
+                </div>
+            </section>
+
+            <section class="actions">
+                <button class="primary" onclick="cadastrar()">＋ Cadastrar</button>
+                <button onclick="listar()">☷ Listar todos</button>
+                <button onclick="buscar()">⌕ Buscar</button>
+                <button onclick="deletar()">🗑️ Deletar por ID</button>
+                <button onclick="removerUltimo()">↩ Remover último</button>
+                <button onclick="limparTudo()">🗑️ Limpar tudo</button>
+            </section>
+
+            <section class="total-card">
+                <div class="total-icon">👟</div>
+                <div>
+                    <h3>Total de tênis</h3>
+                    <strong id="total">0</strong>
+                </div>
+            </section>
+
+            <section class="list-card">
+                <div class="list-title">
+                    <span>👟</span>
+                    <h3>Tênis cadastrados</h3>
+                </div>
+
+                <div id="lista">
+                    <div class="empty">
+                        <div class="empty-icon">👟</div>
+                        <p>Nenhum tênis cadastrado</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

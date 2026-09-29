@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050609;
+    color: #f5f5f5;
+}
+
+.site {
+    width: 100%;
+    min-height: 100vh;
+    background: #0b0d12;
+}
+
+header {
+    height: 72px;
+    background: #171d2a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.brand-icon {
+    width: 46px;
+    height: 46px;
+    border: 2px solid #aeb4c1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.brand h1 {
+    font-size: 23px;
+}
+
+.brand h1 span {
+    color: #6257ff;
+}
+
+header p {
+    color: #767b87;
+    font-size: 14px;
+}
+
+main {
+    width: min(1100px, 92%);
+    margin: auto;
+}
+
+.hero {
+    min-height: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero-text small {
+    color: #535761;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+.hero-text h2 {
+    margin-top: 20px;
+    font-size: 28px;
+    line-height: 1.25;
+}
+
+.hero-text h2 span {
+    color: #6257ff;
+}
+
+.hero-text p {
+    color: #8b8e97;
+    margin-top: 17px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.hero-image {
+    position: relative;
+    width: 430px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image strong {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    font-size: 54px;
+    letter-spacing: 1px;
+    color: #f5f5f5;
+}
+
+.hero-image img {
+    width: 250px;
+    position: relative;
+    z-index: 2;
+    margin-top: 55px;
+    object-fit: contain;
+    filter: drop-shadow(0 12px 10px rgba(0, 0, 0, 0.5));
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 18px 0 28px;
+}
+
+button {
+    border: 0;
+    border-radius: 8px;
+    background: #07090d;
+    color: #f3f3f3;
+    padding: 14px 18px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #171a22;
+    transform: translateY(-1px);
+}
+
+button.primary {
+    background: #5d52ff;
+}
+
+button.primary:hover {
+    background: #7066ff;
+}
+
+.total-card,
+.list-card {
+    background: #171d2a;
+    border: 1px solid #252c3c;
+    border-radius: 8px;
+}
+
+.total-card {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px;
+}
+
+.total-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #382cb2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.total-card h3 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.total-card strong {
+    display: block;
+    margin-top: 4px;
+    font-size: 21px;
+}
+
+.list-card {
+    margin: 24px 6px 35px;
+    min-height: 190px;
+    padding: 18px;
+}
+
+.list-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #30364c;
+}
+
+.list-title span {
+    font-size: 26px;
+}
+
+.list-title h3 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.empty {
+    min-height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.empty-icon {
+    font-size: 34px;
+    color: #6a5cff;
+}
+
+.empty p {
+    font-size: 16px;
+}
+
+.sneaker-item {
+    background: #0e1118;
+    border: 1px solid #282f40;
+    border-radius: 8px;
+    margin-top: 12px;
+    padding: 14px 16px;
+    display: grid;
+    grid-template-columns: 55px 1fr 1fr 1fr;
+    gap: 12px;
+    align-items: center;
+}
+
+.sneaker-id {
+    color: #6b5cff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sneaker-item p {
+    color: #9ca0aa;
+    font-size: 12px;
+}
+
+.sneaker-item strong {
+    display: block;
+    margin-top: 4px;
+    font-size: 14px;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    header {
+        padding: 0 4%;
+    }
+
+    header p {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 30px;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: -10px;
+    }
+
+    .hero-image strong {
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 42px;
+    }
+
+    .actions {
+        gap: 10px;
+    }
+
+    button {
+        flex: 1 1 45%;
+    }
+
+    .sneaker-item {
+        grid-template-columns: 45px 1fr 1fr;
+    }
+}
